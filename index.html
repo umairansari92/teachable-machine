@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Teachable Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Google Teachable Machine</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Try It</a></li>
+        <li><a href="#">Learn More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="info">
+        <h2>How it Works</h2>
+        <p id="info"></p>
+            <p>What is this?</p>
+            <p>This link hosts a machine learning model created using Teachable Machine, a tool that makes it easier for anyone – teachers, students, artists, makers of all kinds – to train machine learning models.</p>
+            <p>How does it work?</p>
+            <p>Machine learning models are trained on examples (e.g., images, sounds, poses) gathered by the creator. Their results depend on the data they’ve been trained on.</p>
+            <p>Want to use this model in your project?</p>
+            <p>See this link to learn how to use Teachable Machine models in your projects.</p>
+            <p>Report this model:</p>
+            <p>If you have concerns about this model, report it using this form.</p>
+      </section>
+
+
+      <section class="about">
+        <h2>What is Teachable Machine?</h2>
+        <p>Teachable Machine is a web-based tool that makes it easy for anyone to create machine learning models. You can train your own image, sound, or pose recognition models, and then use them in your own projects.</p>
+      </section>
+
+    <section class="hero">
+      <h2>Train Your Own Machine Learning Model</h2>
+      <p>Teachable Machine makes it easy for anyone to create machine learning models without coding.</p>
+      <a href="https://teachablemachine.withgoogle.com/" class="cta">Try It Now</a>
+    </section>
+
+    
+
+    <section class="demo">
+      <h2>Teachable Machine Image Model</h2>
+      <div class="demo-container">
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+        <button type="button" onclick="init()">Start</button>
+      </div>
+      <p id="info"></p>
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+      <script src="script.js"></script>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Google Teachable Machine. All rights reserved.</p>
+  </footer>
+</body>
+</html>
